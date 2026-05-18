@@ -150,7 +150,7 @@ Subject to: Σ wᵢ = 1          (weights sum to 1)
 🏗️ Project Architecture in C++
 
 OptionHedgingSystem/\
-├── CMakeLists.txt\
+├── [CMakeLists.txt](https://github.com/manuelmusngi/options-based-portfolio-risk-hedging-for-natural-gas/blob/main/CMakeLists.txt)\
 ├── cmake/\
 │   └── modules/\
 ├── include/\
