@@ -36,48 +36,48 @@ Simulation results show the portfolio approach consistently outperforms both the
 
 gas-generator-option-hedging/
 │
-├── README.md
+├── README.md\
 ├── LICENSE
-├── requirements.txt
-├── setup.py
+├── requirements.txt\
+├── setup.py\
 │
-├── data/
-│   ├── market_prices.csv
-│   ├── gas_costs.csv
-│   └── scenario_params.json
+├── data/\
+│   ├── market_prices.csv\
+│   ├── gas_costs.csv\
+│   └── scenario_params.json\
 │
 ├── src/
 │   ├── options/
-│   │   ├── [short_put.py](https://github.com/manuelmusngi/options-based-portfolio-risk-hedging-for-natural-gas/blob/main/src/options/short_put.py) # Short put payoff, premium, constraint models
-│   │   ├── long_put.py          # Long put payoff, transfer mechanism models
-│   │   └── short_call.py        # Short call payoff and exercise logic
-│   ├── storage/
-│   │   ├── p2g.py               # Power-to-Gas charging/discharging model
-│   │   └── battery.py           # Battery SOC dynamics and constraints
+│   │   ├── [short_put.py](https://github.com/manuelmusngi/options-based-portfolio-risk-hedging-for-natural-gas/blob/main/src/options/short_put.py) # Short put payoff, premium, constraint models\
+│   │   ├── long_put.py          # Long put payoff, transfer mechanism models\
+│   │   └── short_call.py        # Short call payoff and exercise logic\
+│   ├── storage/\
+│   │   ├── p2g.py               # Power-to-Gas charging/discharging model\
+│   │   └── battery.py           # Battery SOC dynamics and constraints\
 │   ├── portfolio/
-│   │   ├── mean_variance.py     # Mean-variance utility: E[r] - 0.5·A·Var[r]
-│   │   ├── optimiser.py         # QP weight optimisation
-│   │   └── risk_metrics.py      # CVaR, Sharpe ratio, return distribution
-│   └── utils/
-│       ├── scenario_gen.py      # Scenario generation (price + demand)
-│       └── plotting.py          # Efficient frontier and payoff profile plots
+│   │   ├── mean_variance.py     # Mean-variance utility: E[r] - 0.5·A·Var[r]\
+│   │   ├── optimiser.py         # QP weight optimisation\
+│   │   └── risk_metrics.py      # CVaR, Sharpe ratio, return distribution\
+│   └── utils/\
+│       ├── scenario_gen.py      # Scenario generation (price + demand)\
+│       └── plotting.py          # Efficient frontier and payoff profile plots\
 │
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_option_payoffs.ipynb
-│   ├── 03_storage_simulation.ipynb
-│   └── 04_portfolio_optimisation.ipynb
+├── notebooks/\
+│   ├── 01_data_exploration.ipynb\
+│   ├── 02_option_payoffs.ipynb\
+│   ├── 03_storage_simulation.ipynb\
+│   └── 04_portfolio_optimisation.ipynb\
 │
-├── tests/
-│   ├── test_options.py
-│   ├── test_storage.py
-│   └── test_portfolio.py
+├── tests/\
+│   ├── test_options.py\
+│   ├── test_storage.py\
+│   └── test_portfolio.py\
 │
-└── diagrams/
-    ├── risk_flow_diagram.svg        # Research-grade risk-flow flowchart
-    ├── portfolio_infographic.svg    # Stakeholder-facing portfolio infographic
-    ├── risk_flow_diagram.png
-    └── portfolio_infographic.png
+└── diagrams/\
+    ├── risk_flow_diagram.svg        # Research-grade risk-flow flowchart\
+    ├── portfolio_infographic.svg    # Stakeholder-facing portfolio infographic\
+    ├── risk_flow_diagram.png\
+    └── portfolio_infographic.png\
 
 ---
 
