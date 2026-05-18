@@ -91,14 +91,14 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-**Key dependencies:**
+📦 **Key dependencies:**
 ```
 numpy>=1.23 · scipy>=1.9 · pandas>=1.5 · cvxpy>=1.3 · matplotlib>=3.6 · seaborn>=0.12 · jupyter>=1.0 · pytest>=7.2
 ```
 
 ---
 
-## Usage
+⚡ Usage
 
 ```python
 from src.options.short_put import ShortPut
@@ -124,7 +124,7 @@ print(result.weights)
 
 ---
 
-## Model Overview
+🧩 Model Overview
 
 ```
 Maximise:   U = E[r_portfolio(T)] − (1/2) · A · Var[r_portfolio(T)]
@@ -138,7 +138,7 @@ Subject to: Σ wᵢ = 1          (weights sum to 1)
 
 ---
 
-## Assumptions
+☑️ Assumptions
 
 1. **Time resolution:** 30-minute slots (48/day)
 2. **Strike price:** Uniform across options for baseline — extend if paper specifies instrument-level strikes
@@ -178,7 +178,7 @@ OptionHedgingSystem/
 
 ```
 
-## Citation
+📖 Citation
 
 ```bibtex
 @article{lai2022option,
@@ -191,6 +191,6 @@ OptionHedgingSystem/
 }
 ```
 
-## License
+📄 License
 
 MIT — see [LICENSE](LICENSE). Not affiliated with or endorsed by the original authors.
