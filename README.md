@@ -45,6 +45,7 @@ gas-generator-option-hedging/\
 │   └── scenario_params.json\
 ├── src/\
 │   ├── options/\
+│   │   ├── [init.py](https://github.com/manuelmusngi/options-based-portfolio-risk-hedging-for-natural-gas/blob/main/src/options/__init__.py)
 │   │   ├── [short_put.py](https://github.com/manuelmusngi/options-based-portfolio-risk-hedging-for-natural-gas/blob/main/src/options/short_put.py)   # Short put payoff, premium, constraint models\
 │   │   ├── [long_put.py](https://github.com/manuelmusngi/options-based-portfolio-risk-hedging-for-natural-gas/blob/main/src/options/long_put.py)      # Long put payoff, transfer mechanism models\
 │   │   └── [short_call.py](https://github.com/manuelmusngi/options-based-portfolio-risk-hedging-for-natural-gas/blob/main/src/options/short_call.py)  # Short call payoff and exercise logic\
