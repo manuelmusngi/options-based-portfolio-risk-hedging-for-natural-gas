@@ -149,32 +149,28 @@ Subject to: Σ wᵢ = 1          (weights sum to 1)
 
 🏗️ Project Architecture in C++
 
-```
-
-OptionHedgingSystem/
-├── CMakeLists.txt
-├── cmake/
-│   └── modules/
-├── include/
-│   ├── core/
-│   ├── models/
-│   ├── storage/
-│   ├── optimization/
-│   ├── simulation/
+OptionHedgingSystem/\
+├── CMakeLists.txt\
+├── cmake/\
+│   └── modules/\
+├── include/\
+│   ├── core/\
+│   ├── models/\
+│   ├── storage/\
+│   ├── optimization/\
+│   ├── simulation/\
 │   └── utils/
-├── src/
-│   ├── core/
-│   ├── models/
-│   ├── storage/
-│   ├── optimization/
-│   ├── simulation/
-│   └── utils/
-├── configs/
-├── data/
-├── tests/
-└── examples/
-
-```
+├── src/\
+│   ├── core/\
+│   ├── models/\
+│   ├── storage/\
+│   ├── optimization/\
+│   ├── simulation/\
+│   └── utils/\
+├── configs/\
+├── data/\
+├── tests/\
+└── examples/\
 
 📖 Citation
 
