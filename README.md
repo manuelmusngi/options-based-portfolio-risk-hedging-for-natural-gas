@@ -1,6 +1,6 @@
 #### Options-Based Portfolio Risk Hedging for Natural Gas
 
-This project is an exercise on a research-grade Options Strategies hedging implementation in Henry Hub Natural Gas portfolio. Two implementations are considered, one Python-based while the other in C++ based structures.
+This project is an exercise on a research-grade Options Strategies hedging implementation in Henry Hub Natural Gas portfolio. In this project I provided two implementation considerations, one Python-based while the other in C++ based structure.
 
 >📄 **Research Paper Reference:** Lai, S., Qiu, J., & Tao, Y. (2022). Option-based portfolio risk hedging strategy for gas generator based on mean-variance utility model. *Energy Conversion and Economics*, 3(1), 20–30. DOI: [10.1049/enc2.12036](https://doi.org/10.1049/enc2.12036)
 
