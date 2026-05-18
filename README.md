@@ -159,7 +159,7 @@ OptionHedgingSystem/\
 │   ├── storage/\
 │   ├── optimization/\
 │   ├── simulation/\
-│   └── utils/
+│   └── utils/\
 ├── src/\
 │   ├── core/\
 │   ├── models/\
