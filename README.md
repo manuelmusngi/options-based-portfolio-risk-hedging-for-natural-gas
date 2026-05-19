@@ -54,7 +54,7 @@ gas-generator-option-hedging/\
 │   │   └── battery.py           # Battery SOC dynamics and constraints\
 │   ├── portfolio/\
 │   │   ├── [mean_variance.py](https://github.com/manuelmusngi/options-based-portfolio-risk-hedging-for-natural-gas/blob/main/src/portfolio/mean_variance.py)     # Mean-variance utility: E[r] - 0.5·A·Var[r]\
-│   │   ├── [optimiser.py](https://github.com/manuelmusngi/options-based-portfolio-risk-hedging-for-natural-gas/blob/main/src/portfolio/optimizer.py)         # QP weight optimisation\
+│   │   ├── optimiser.py # QP weight optimisation\
 │   │   └── risk_metrics.py      # CVaR, Sharpe ratio, return distribution\
 │   └── utils/\
 │       ├── scenario_gen.py      # Scenario generation (price + demand)\
