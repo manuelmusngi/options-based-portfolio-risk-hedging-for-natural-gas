@@ -90,19 +90,6 @@ gas-generator-option-hedging/\
 
 ---
 
-📖 Citation
-
- 
-@article{lai2022option,
-  title   = {Option-based portfolio risk hedging strategy for gas generator
-             based on mean-variance utility model},
-  author  = {Lai, Shuying and Qiu, Jing and Tao, Yuechuan},
-  journal = {Energy Conversion and Economics},
-  volume  = {3}, number = {1}, pages = {20--30}, year = {2022},
-  doi     = {10.1049/enc2.12036}
-}
- 
-
 📄 License
 
 MIT — see [LICENSE](LICENSE). Not affiliated with or endorsed by the original authors.
