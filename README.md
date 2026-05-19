@@ -92,7 +92,7 @@ gas-generator-option-hedging/\
 
 📖 Citation
 
-```bibtex
+ 
 @article{lai2022option,
   title   = {Option-based portfolio risk hedging strategy for gas generator
              based on mean-variance utility model},
@@ -101,7 +101,7 @@ gas-generator-option-hedging/\
   volume  = {3}, number = {1}, pages = {20--30}, year = {2022},
   doi     = {10.1049/enc2.12036}
 }
-```
+ 
 
 📄 License
 
