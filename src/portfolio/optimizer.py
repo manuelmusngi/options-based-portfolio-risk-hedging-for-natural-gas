@@ -1,5 +1,5 @@
 """
-Mean-Variance Portfolio Optimiser (paper §7, Eq. 47)
+Mean-Variance Portfolio Optimizer (paper §7, Eq. 47)
 =====================================================
 Solves QP:  Max  w @ μ − (1/2)*A * w @ Σ @ w
             s.t. sum(w) = 1,  w ≥ 0
@@ -32,7 +32,7 @@ except ImportError:
 
 
 @dataclass
-class OptimisationResult:
+class OptimizationResult:
     weights: np.ndarray
     instrument_names: List[str]
     expected_return: float
@@ -48,7 +48,7 @@ class OptimisationResult:
 
     def __str__(self) -> str:
         lines = [
-            "OptimisationResult", "=" * 42,
+            "OptimizationResult", "=" * 42,
             f"  Risk aversion A  : {self.risk_aversion:.2f}",
             f"  E[return]        : {self.expected_return:+.6f}",
             f"  Std dev          : {np.sqrt(max(self.variance, 0)):.6f}",
@@ -63,9 +63,9 @@ class OptimisationResult:
         return "\n".join(lines)
 
 
-class MeanVarianceOptimiser:
+class MeanVarianceOptimizer:
     """
-    Portfolio optimiser for the gas generator hedging problem.
+    Portfolio optimizer for the gas generator hedging problem.
 
     Parameters
     ----------
@@ -167,7 +167,7 @@ class MeanVarianceOptimiser:
         self._is_built = True
         return self
 
-    def _solve_cvxpy(self, A: float) -> OptimisationResult:
+    def _solve_cvxpy(self, A: float) -> OptimizationResult:
         mu = self._mv.mu
         sigma = self._mv.sigma
         n = self.n_instruments
@@ -188,7 +188,7 @@ class MeanVarianceOptimiser:
         weights = np.clip(weights, 0.0, 1.0)
         weights /= weights.sum()
         stats = self._mv.stats(weights, A)
-        return OptimisationResult(
+        return OptimizationResult(
             weights=weights, instrument_names=self.instrument_names,
             expected_return=stats.expected_return, variance=stats.variance,
             utility=stats.utility, risk_aversion=A,
@@ -196,7 +196,7 @@ class MeanVarianceOptimiser:
             n_scenarios=self._return_matrix.shape[0],
         )
 
-    def _solve_scipy(self, A: float) -> OptimisationResult:
+    def _solve_scipy(self, A: float) -> OptimizationResult:
         from scipy.optimize import minimize
         mu = self._mv.mu
         sigma = self._mv.sigma
@@ -223,7 +223,7 @@ class MeanVarianceOptimiser:
         weights = np.clip(weights, 0.0, 1.0)
         weights /= weights.sum()
         stats = self._mv.stats(weights, A)
-        return OptimisationResult(
+        return OptimizationResult(
             weights=weights, instrument_names=self.instrument_names,
             expected_return=stats.expected_return, variance=stats.variance,
             utility=stats.utility, risk_aversion=A,
@@ -250,7 +250,7 @@ class MeanVarianceOptimiser:
             self.build()
         return self._solve_cvxpy(A) if _CVXPY_AVAILABLE else self._solve_scipy(A)
 
-    def sweep(self, a_min=0.0, a_max=10.0, steps=21) -> List[OptimisationResult]:
+    def sweep(self, a_min=0.0, a_max=10.0, steps=21) -> List[OptimizationResult]:
         if not self._is_built:
             self.build()
         return [self.solve(risk_aversion=float(a)) for a in np.linspace(a_min, a_max, steps)]
