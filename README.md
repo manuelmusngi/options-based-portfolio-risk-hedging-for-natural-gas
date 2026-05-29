@@ -6,7 +6,6 @@ This project is an exercise on a research-grade Options Strategies hedging imple
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-green.svg)](https://www.python.org/)
-[![DOI](https://img.shields.io/badge/DOI-10.1049%2Fenc2.12036-orange.svg)](https://doi.org/10.1049/enc2.12036)
 [![Status: Research](https://img.shields.io/badge/Status-Research-purple.svg)]()
 
 ---
